@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charater Count - 文字カウント</title>
+</head>
+<body>
+    <form action="/" method="POST">
+        <div>
+            <label for="fullname">Fullname</label>
+            <input
+            data-textinput_input="charcount"
+            data-textinput-maxlength="8"
+            name="fullname"
+            id="fullname"
+            type="text"
+            />
+            <div data-textinput="display-charcount"></div>
+        </div>
+        <div>
+            <label for="self-introduction">Self Introduction</label>
+            <textarea
+            data-textinput_input="charcount"
+            data-textinput-maxlength="20"
+            name="self-introduction"
+            id="self-introduction"
+            rows="5"
+            type="text"
+            ></textarea>
+            <div data-textinput="display-charcount"></div>
+        </div>
+    </form>
+    <script src="../dist/charcounter.js"></script>
+</body>
+</html>
